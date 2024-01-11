@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>New Popup</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<button type="submit" class="btn" onclick="openPopup()">Submit</button>
+		<div class="popup" id="pop">
+			<h1>Successful!</h1>
+			<h2>Thank You!</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</p>
+			<button type="button" onclick="closePopup()">Close</button>
+		</div>
+	</div>
+
+	<script>
+		
+		let up = document.getElementById("pop")
+
+		function openPopup() {
+			up.classList.add("open-popup");
+		}
+
+		function closePopup() {
+			up.classList.remove("open-popup");
+		}
+
+	</script>
+
+</body>
+</html>
